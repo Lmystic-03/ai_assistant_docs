@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     texte = lire_pdf("data/documents/cours SQL.pdf")
     chunks = decouper_en_chunks(texte)
-    question = "Comment utiliser le caractère étoile pour choisir toutes les colonnes ?"
+    question = "Comment sélectionner toutes les colonnes ?"
     resultats = chercher_chunks_pertinents(question, chunks)
 
     for chunk, score in resultats:
